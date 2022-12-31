@@ -5,6 +5,8 @@ Invert colors in html via javascript
 
 Support for emojis. This is to prevent emojis from being inverted in the opposite way.
 
+Update/rewrite DOM when there is a change in the DOM tree triggered by user interaction or scripting
+
 # Bug
 
 The only bug is in the case of emojis that are made up of double or more emojis like 💕,😘, etc. The structure is transformed to something like this �.

@@ -70,5 +70,14 @@ javascript: (
             }
         }
         body.innerHTML = rewriteString(body.innerHTML);
+        
+
+        new MutationObserver((mutationList, observer) => {
+            for (const mutation of mutationList) {
+                body.innerHTML = rewriteString(body.innerHTML);
+            }
+        })
+        .observe(body, { attributes: true, childList: true, subtree: true });
+
     }
 ());
