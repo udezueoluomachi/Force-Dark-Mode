@@ -25,7 +25,7 @@ javascript: (
                   '-moz-filter: invert(100%) !important;' + 
                   '-o-filter: invert(100%) !important;' + 
                   '-ms-filter: invert(100%) !important;}',
-        head = document.getElementsByTagName('head')[0], style = document.createElement('style') , body = document.getElementsByTagName('body')[0];
+        head = document.head, style = document.createElement('style') , body = document.body;
         if (!window.counter) { 
             window.counter = 1;
         } else { 
